@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web</title>
+</head>
+<body>
+    <h1>Enter the following number:</h1>
+    <form action="/digit_captcha?database={{ database }}" enctype='multipart/form-data' method='POST'>
+        <img  id="captcha-img" src="{{ file }}"/>
+        <br>
+        <p style="color:red;font-size:120%">WRONG ANSWER!</p>
+        <input type="text" class="txt_input" name="name"  value="" style="margin-top:10px;"/>
+        <input type="submit" value="submit" class="button-new" name="submit_button" style="margin-top:15px;"/>
+        <br>
+        <input type="submit" value="refresh" class="button-new" name="submit_button"  style="margin-top:15px;"/>
+    </form>
+</body>
+</html>

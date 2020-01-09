@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web</title>
+</head>
+<body>
+    <h1>Choose the images of {{ target }}:</h1>
+    <form action="" enctype='multipart/form-data' method='POST'>
+        <table border="0">
+        <tr>
+        <td><input type="checkbox" name="0" value="0" style="zoom:250%;"/>
+            <img  id="captcha-img0" src="{{ url_for('static', filename= './0.bmp', _t=val1) }}" width="224" height="224"/></td>
+        <td><input type="checkbox" name="1" value="1" style="zoom:250%;"/>
+            <img  id="captcha-img1" src="{{ url_for('static', filename= './1.bmp', _t=val1) }}" width="224" height="224"/></td>
+        <td><input type="checkbox" name="2" value="2" style="zoom:250%;"/>
+            <img  id="captcha-img2" src="{{ url_for('static', filename= './2.bmp', _t=val1) }}" width="224" height="224"/></td>
+        </tr>
+        <tr>
+        <td><input type="checkbox" name="3" value="3" style="zoom:250%;"/>
+            <img  id="captcha-img3" src="{{ url_for('static', filename= './3.bmp', _t=val1) }}" width="224" height="224"/></td>
+        <td><input type="checkbox" name="4" value="4" style="zoom:250%;"/>
+            <img  id="captcha-img4" src="{{ url_for('static', filename= './4.bmp', _t=val1) }}" width="224" height="224"/></td>
+        <td><input type="checkbox" name="5" value="5" style="zoom:250%;"/>
+            <img  id="captcha-img5" src="{{ url_for('static', filename= './5.bmp', _t=val1) }}" width="224" height="224"/></td>
+        </tr>
+        <tr>
+        <td><input type="checkbox" name="6" value="6" style="zoom:250%;"/>
+            <img  id="captcha-img6" src="{{ url_for('static', filename= './6.bmp', _t=val1) }}" width="224" height="224"/></td>
+        <td><input type="checkbox" name="7" value="7" style="zoom:250%;"/>
+            <img  id="captcha-img7" src="{{ url_for('static', filename= './7.bmp', _t=val1) }}" width="224" height="224"/></td>
+        <td><input type="checkbox" name="8" value="8" style="zoom:250%;"/>
+            <img  id="captcha-img8" src="{{ url_for('static', filename= './8.bmp', _t=val1) }}" width="224" height="224"/></td>
+        </tr>
+        </table>
+        <input type="submit" value="submit" class="button-new" style="margin-top:15px;"/>
+    </form>
+</body>
+</html>
+
